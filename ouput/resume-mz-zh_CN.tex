@@ -8,7 +8,11 @@
 % \usepackage{NotoSerifCJKsc_external}
 % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
-\usepackage{cite}
+%\usepackage{cite}
+%\usepackage[colorlinks,linkcolor=red]{hyperref}
+%\hypersetup{colorlinks=true,linkcolor=red}
+\usepackage{hyperref}
+
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -16,11 +20,12 @@
 \name{曾铭}
 
 \basicInfo{
-  
-  \email{\href{mailto:mingz1@foxmail.com}{mingz1@foxmail.com}} \textperiodcentered\ 
+  \email{mingz1@foxmail.com} \textperiodcentered\ 
   \phone{(+86) 191-2171-1369} \textperiodcentered\ 
-%  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
- 
+  \weixin{19121711369} \textperiodcentered\ 
+  \year{26岁}
+}
+
 \section{教育背景}
 \datedsubsection{\textbf{上海大学}, 上海}{2019 -- 2022}
 \textit{硕士研究生}\ 人口学
@@ -28,30 +33,42 @@
 \textit{学士}\ 城市管理
 
 \section{工作经历}
-\datedsubsection{\textbf{上海第一财经传媒有限公司} 上海}{2023年8月 -- 至今}
-\datedsubsection{新一线城市研究所}
-\role{数据分析师}
+\datedsubsection{\textbf{上海第一财经传媒有限公司}, 上海}{2022年8月 -- 至今}
+\role{新一线城市研究所, 数据分析师}
 
-\begin{\href{https://www.datayicai.com/home#/menu/}{知城数据平台-商业空间评估模块}}
+
+\href{https://www.datayicai.com/home#/menu/}{知城数据平台-商业空间评估模块}
+\begin{itemize}
   \item 持续维护和迭代商业空间评估功能模块中购物中心栏目，通过爬虫核查并更新购物中心的季度变化，更新存续情况。
   \item 构建购物中心的地理信息图层并持续维护购物中心的边界，支撑咨询项目的空间计算需求。
   \item 基于现有数据处理体系，用Python和n8n重构数据处理框架，持续优化数据管理流程。
   \item 执行数据提取、整合、分析更新、维护、开发对接等工作，
 \end{itemize}
 
-\begin{品牌爬虫项目库}
+品牌爬虫项目库
+\begin{itemize}
   \item 从零售、餐饮、出行等维度筛选细分领域品牌作为观测对象，抓取品牌门店信息。
   \item 搭建自托管 Crawlab 平台，维护并定时执行爬虫文件，监测门店数量变化。
 \end{itemize}
 
-\begin{项目支持}
-  \item 基于空间算法计算识别汽车门店商圈，运用 shiny 等可视化工具搭建交互网页支援业务同事。
+项目支持
+\begin{itemize}
+  \item 基于空间算法计算识别汽车门店商圈，运用 shiny 等可视化工具搭建交互网页为业务同事提供支持。
   \item 对无印良品、龙湖和上海经济中心项目提供数据支持，与商业组协作对接客户需求。其中，龙湖项目中负责进行建模完成人口增量推算。
 \end{itemize}
 
-\begin{城市数据分析报告}
+城市数据分析报告
+\begin{itemize}
   \item {\href{https://mp.weixin.qq.com/s/SyOUXpGp4fwp5L7ENjbohw}{如何选择心仪大学？这里有一份高考志愿填报城市指南}}
+    \begin{itemize}
+      \item 根据高校文理科录取分数线、计划招生人数计算生源质量指数。
+      \item 通过考察城市之间的生源质量指数差异，挖掘城市的未来潜力。
+      \item 从指数结果分析考生对专业、校区所在城市的偏好。
+    \end{itemize}
   \item {\href{https://mp.weixin.qq.com/s/E5gDIfpdBE4sHfa7M52udA}{都市圈内外的创新联系什么样？}}
+    \begin{itemize}
+      \item 基于城市之间的投资事件和企业分支数据，分析城市、都市圈之间的关联度。
+    \end{itemize} 
 \end{itemize}
 
 
@@ -64,21 +81,10 @@
 %\end{itemize}
 
 \section{技能}
-% increase linespacing [parsep=0.5ex]
-\textbf{编程语言：} \small R, Python, SQL
-\textbf{工具：} \small MS Office, \LaTeX, PostgreSQL, Docker, Scrapy
-\textbf{语言：} \small 英语 - 熟练(英语六级：580)
+\begin{itemize}
+  \item \textbf{编程语言：} \small R, Python, SQL
+  \item \textbf{工具：} \small MS Office, \LaTeX, PostgreSQL, Docker, Scrapy
+  \item \textbf{语言：} \small 英语 - 熟练(英语六级：580)
+\end{itemize}
 
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-%\begin{itemize}[parsep=0.5ex]
-%  \item 技术博客: http://blog.yours.me
-%  \item GitHub: https://github.com/username
-%  \item 语言: 
-%\end{itemize}
-
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
 \end{document}
